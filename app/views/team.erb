@@ -1,3 +1,25 @@
+<h1>Here is Your New Team</h1>
+Team Name: <%= @team.name %><br>
+Team Motto: <%= @team.motto %><br>
+<br>
+<h2>Your Heros</h2>
+<h3>Hero 1</h3>
+<% first = @heros.find {|hero| hero.id==1} %>
+Hero Name: <%= first.name %><br>
+Hero Power: <%= first.power %><br>
+Hero Biography: <%= first.bio %><br>
+<br>
+<% second = @heros.find {|hero| hero.id ==2} %>
+<h3>Hero 2</h3>
+Hero Name: <%= second.name %><br>
+Hero Power: <%= second.power %><br>
+Hero Biography: <%= second.bio %><br>
+<br>
+<h3>Hero 3</h3>
+<% third = @heros.find{|hero| hero.id == 3} %>
+Hero Name: <%= third.name %><br>
+Hero Power: <%= third.power %><br>
+Hero Biography: <%= third.bio %><br>
 
 
 
